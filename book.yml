@@ -1,13 +1,18 @@
-title: My Marimo Book
+title: Signal Filter Book
 description: A static site built from marimo notebooks + Markdown.
 authors:
-  - name: Your Name
+  - name: Adrien Babet
 
 # Uncomment + fill in to enable repo-aware launch buttons (molab / GitHub /
 # Download) on every .py page. The branch is where molab will resolve
 # against; if you're working on a feature branch, change it here.
 # repo: https://github.com/your-org/your-repo
 # branch: main
+repo: https://github.com/babetCode/signal-filter-book
+branch: main
+
+logo: images/filter-book-icon.svg
+favicon: images/filter-book-icon.svg
 
 # Material for MkDocs palette. Any hex color works; uncomment to customise.
 # theme:
