@@ -50,3 +50,4 @@ dependencies:
 toc:
   - file: content/intro.md
   - file: content/example.py
+  - file: content/01_g_h_filter.py
