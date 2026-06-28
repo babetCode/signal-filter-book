@@ -3,7 +3,7 @@ import marimo
 __generated_with = "0.23.11"
 app = marimo.App(width="medium")
 
-with app.setup:
+with app.setup(hide_code=True):
     import marimo as mo
     import numpy as np
 
