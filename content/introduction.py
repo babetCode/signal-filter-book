@@ -12,10 +12,10 @@ with app.setup(hide_code=True):
 def _():
     mo.md(r"""
     ## What are signal filters?
-    Sensors—and measurement tools in general—are imperfect. It is imposible to measure anything with 100% accuracy. However, by combining multiple measurements with knowlege about the things being measured, it is possible to make better estimates. That is what signal filters do.
+    Sensors—and measurement tools in general—are imperfect. It is imposible to measure anything with 100% precision. However, by combining multiple measurements with knowlege about the things being measured, it is possible to make better estimates. That is what signal filters do.
 
     ### Intuitive understanding
-    Humans generally have intuition on handling imperfect data: when making hard decisions, they consult multiple people (social measurements) and decide based on a combination of the input recieved and their understanding of the situation. Moreover, most understand that gettin the input of more people can lead to better understanding even if no single person's input is 100% perfect.
+    Humans generally have intuition on handling imperfect data: when making hard decisions, they consult multiple people (social measurements) and decide based on a combination of the input recieved and their understanding of the situation. Moreover, most understand that getting the input of more people can lead to better understanding even if no single person's input is 100% perfect.
 
     Signal filters do this same process, but instead estimating the best decision to make using social measurements, filters take a variety of measurements and use them to estimate any unknown state in a given system. For example, when traveling on a road (a system), a filter might be used to estimate location (a state), using imprecise GPS data (measurements). The crucial point—both here and with social decision making—is that having more measurements allows us to achieve better estimates *even if none of the measurements are 100% correct*.
 
@@ -44,7 +44,9 @@ def _():
 @app.cell(hide_code=True)
 def _():
     mo.md(r"""
-    The longer we continued to do this, the better we would expect our estimate to get.
+    The longer we continued to do this, the better we would expect our estimate to get. However, the analog-to-digital converter on a normal bathroom scale samples the weight signal between 10 and 80 times per second, meaning we will quickly have a very long set of measurements to average.
+
+    To avoid storing such a long list of measurements, we can take a clever approach by storing the past average.
     """)
     return
 
