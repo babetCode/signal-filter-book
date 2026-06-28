@@ -48,6 +48,15 @@ dependencies:
 #     some_param: 42
 
 toc:
-  - file: content/intro.md
-  - file: content/example.py
+  - file: content/home.md
+  - file: content/introduction.py
+    title: "Introduction"
   - file: content/01_g_h_filter.py
+    title: "Chapter 1: g-h filter"
+  # - file: content/example.py
+  #   # mode: wasm
+  # # - section: Chapters
+  # #   children:
+  # - file: content/g-h_filter.py
+  # - file: content/g-h_filter_copy.py
+  #     # mode: wasm

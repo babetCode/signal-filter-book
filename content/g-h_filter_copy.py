@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.23.11"
+__generated_with = "0.23.9"
 app = marimo.App()
 
 
@@ -14,7 +14,7 @@ def _():
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    # g-h filter
+    # \(\alpha\)-\(\beta\) filter
     """)
     return
 
@@ -22,14 +22,12 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    The g-h filter (aka alpha-beta filter) is a simple signal filter.
+    The alpha-beta filter (aka g-h filter) is a simple signal filter.
 
     The filter uses a prediction (\(x'\)) and a measurement (\(z\)) to estimate a state (\(x\)). The gain (\(g\)) determines whether the measurement or the estimate is weighted more heavily:
-
     \[\text{estimate(}x\text{)} = \text{prediction(}x'\text{)} + \text{gain(}g\text{)} \cdot (\text{measurement(}z\text{)} - \text{prediction(}x'\text{)}).\]
 
     The difference \((\text{measurement}-\text{prediction})\) is called the residual (\(y\)), giving
-
     \[x = x' + g \cdot y.\]
 
     ---
@@ -48,6 +46,14 @@ def _(mo):
     1. Get a measurement and associated belief about its accuracy
     2. Compute residual between estimated state and measurement
     3. New estimate is somewhere on the residual line
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    test123
     """)
     return
 
