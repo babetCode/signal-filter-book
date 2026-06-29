@@ -48,20 +48,18 @@ def _():
     ```
 
     Note that we have used \(k-1\) and \(k\) this time instead of \(k\) and \(k+1\) in order to match the subscript to the incoming measurement \(z\) rather than the previous one. Despite this subscript notation, the functionality is exactly the same.
-
-    ## Weighted average
     """)
     return
 
 
-@app.cell(hide_code=True)
+@app.cell(disabled=True, hide_code=True)
 def _():
     slider = mo.ui.slider(0,10,1,0)
     slider
     return (slider,)
 
 
-@app.cell(hide_code=True)
+@app.cell(disabled=True, hide_code=True)
 def _(slider):
     slider.value
     return
