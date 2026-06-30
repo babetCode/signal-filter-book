@@ -14,14 +14,6 @@ def _():
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    # g-h filter
-    """)
-    return
-
-
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(r"""
     The g-h filter (aka alpha-beta filter) is a simple signal filter.
 
     The filter uses a prediction (\(x'\)) and a measurement (\(z\)) to estimate a state (\(x\)). The gain (\(g\)) determines whether the measurement or the estimate is weighted more heavily:

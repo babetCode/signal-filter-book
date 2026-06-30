@@ -53,10 +53,14 @@ toc:
     title: "Introduction"
   - file: content/01_g_h_filter.py
     title: "Chapter 1: g-h filter"
-  # - file: content/example.py
-  #   # mode: wasm
-  # # - section: Chapters
-  # #   children:
-  # - file: content/g-h_filter.py
-  # - file: content/g-h_filter_copy.py
-  #     # mode: wasm
+  - section: utils
+    children:
+      - file: content/utils/static_example.py
+      - file: content/utils/cached_example.py
+        mode: cached
+      - file: content/utils/wasm_example.py
+        mode: wasm
+      - file: content/utils/wasm_editor.py
+        title: "Wasm editor"
+        mode: wasm
+      
